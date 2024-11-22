@@ -5,6 +5,7 @@ const $ = (selector) => {
 const hour = $(".hour");
 const dot = $(".dot");
 const minute = $(".minute");
+const second = $(".second");
 const week = $(".week");
 let showDot = true;
 
@@ -18,9 +19,9 @@ function update() {
     dot.classList.remove("invisible");
   }
 
-  // Use String() instead of string(), and padStart() instead of padstart()
   hour.textContent = String(now.getHours()).padStart(2, "0");
   minute.textContent = String(now.getMinutes()).padStart(2, "0");
+  second.textContent = String(now.getSeconds()).padStart(2, "0");
 
   Array.from(week.children).forEach((ele) => {
     ele.classList.remove("active");

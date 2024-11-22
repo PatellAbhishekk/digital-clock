@@ -1,7 +1,18 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Atma:wght@300;400;500;600;700&family=Orbitron:wght@400..900&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #2d2d2d;
 }
 
 .digital-clock {
@@ -28,12 +39,10 @@
   color: white;
 }
 
-.time {
-}
-
 .hour,
 .minute,
-.dot {
+.dot,
+.second {
   display: inline-block;
   font-size: 13rem;
 }
@@ -44,4 +53,24 @@
 
 .visible {
   visibility: hidden;
+}
+
+@media screen and (max-width: 443px) {
+  .second {
+    display: none;
+  }
+  .dot {
+    display: none;
+  }
+  .hour {
+    margin-left: -3px;
+  }
+  . hour,
+  . minute,
+  . second {
+    font-size: 10px;
+  }
+  .week {
+    gap: 10px;
+  }
 }
