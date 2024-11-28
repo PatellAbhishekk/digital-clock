@@ -66,9 +66,9 @@ body {
   .hour {
     margin-left: -3px;
   }
-  . hour,
-  . minute,
-  . second {
+  .hour,
+  .minute,
+  .second {
     font-size: 10px;
   }
   .week {
