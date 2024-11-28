@@ -18,4 +18,4 @@ npm run dev
 
 ## License
 
-![MIT License](https://img.shields.io/badge/License-MIT-green.svg "https://raw.githubusercontent.com/PatellAbhishekk/digital-clock/refs/heads/main/LICENSE")
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://raw.githubusercontent.com/PatellAbhishekk/digital-clock/refs/heads/main/LICENSE)
